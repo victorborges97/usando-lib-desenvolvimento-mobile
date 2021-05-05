@@ -55,6 +55,8 @@ class MainActivity : AppCompatActivity() {
         resideMenu?.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT)
         resideMenu?.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT)
 
+        resideMenu?.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT)
+
     }
 
     private val menuListener: OnMenuListener = object : OnMenuListener {
